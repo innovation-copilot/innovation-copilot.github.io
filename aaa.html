@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Windows Innovation</title>
+    <link rel="icon" href="Windows Innovation icon.svg" sizes="512x512">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: url('Desktop background.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        position: relative;
+      }
+      
+      .overlay {
+        position: absolute;
+        top: calc(100vh - 50px);
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 1000px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        animation: slideIn 0.5s forwards;
+      }
+
+      @keyframes slideIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .custom-overlay {
+        position: absolute;
+        /* top: calc(100vh - 90px); */
+        top: 10px;
+        left: 10px;
+        width: calc(100vw - 20px);
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        animation: slideIn 0.5s forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay"></div>  <!--任务栏-->
+    <div class="custom-overlay">
+      <!-- <img src="Apple-icon.svg" alt="Apple Icon"> -->
+    </div> <!--状态栏-->
+  </body>
+  
+</html>
